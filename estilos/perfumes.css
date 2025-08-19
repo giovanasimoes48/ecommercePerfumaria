@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  display: block;
+}
+
+header {
+  font-family: "Cormorant SC", sans-serif;
+  display: flex;
+  padding: 20px 100px;
+  justify-content: space-between;
+  background: #f1dfd1;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lista-header {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 220px;
+}
+
+.lista-header li a {
+  font-size: 28px;
+  color: #545454;
+  text-transform: uppercase;
+}
+
+.input-header {
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.input-header img {
+  background-color: #fff;
+}
+
+.input-header input {
+  border: none;
+  width: 30ch;
+  padding: 5px;
+}
+
+@media (max-width: 1200px) {
+  header {
+    justify-content: center;
+  }
+}
+
+main {
+  padding: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 80px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.grid-item img{cursor: pointer;} 
+
+.grid-item h2 {
+  font-family: "Questrial", sans-serif;
+  max-width: 20ch;
+  font-size: 32px;
+  font-weight: 200;
+  color: #545454;
+  margin-bottom: 25px;
+}
+
+.grid-item p {
+  font-family: "Questrial", sans-serif;
+  font-size: 24px;
+  color: #545454;
+}
+
+.direita-item {
+  margin-top: 50px;
+}
+
+@media (max-width: 1050px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 630px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item h2 {
+    font-size: 24px;
+  }
+
+  .grid-item p {
+    font-size: 18px;
+  }
+
+  .grid-item img {
+    max-width: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 630px) {
+  .direita-item {
+    margin-top: 0px;
+  }
+}
+
+a {
+  transform: scale(1.2);
+}
+
+a {
+  transition: 0.3s;
+}
